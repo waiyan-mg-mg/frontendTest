@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-weight: bold;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: 0.5s;
+
+            }
+
+            button:active {
+                font-size: 90%;
+            }
+
+            .container {
+                max-width: 500px;
+                padding: 10px;
+                margin: 50px auto;
+                border: 2px solid #288cad;
+                border-radius: 10px;
+                background-color: rgb(245, 171, 74);
+
+                transition: 0.3s;
+            }
+
+            .container:hover {
+                background-color: #0fa1d1;
+            }
+
+            .button_cont {
+                text-align: right;
+            }
+
+
+            .button_cont button:hover {
+                background-color: crimson;
+                color: white;
+            }
+
+            h1 {
+                text-align: center;
+                color: #000000;
+            }
+
+            .box-body {
+                text-align: justify;
+                color: white;
+                font-style: italic;
+
+            }
+
+            p::selection {
+                color: #ec3737;
+                background-color: white;
+            }
+
+            .box-footer {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .box-footer .btn-reg:hover {
+                background-color: rgb(9, 104, 9);
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="box_header">
+                <div class="button_cont">
+                    <button class="btn-close">Close</button>
+                </div>
+                <h1>This is header</h1>
+            </div>
+            <div class="box-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquam, placeat cum est temporibus at,
+                    voluptatem quam sint, molestias assumenda dolor sequi accusantium maiores eos exercitationem. Ipsum
+                    eum dolorum ex vero laboriosam ut sint et explicabo, odit doloremque, aperiam consectetur?</p>
+            </div>
+            <div class="box-footer">
+                <button class="btn-reg">Register</button>
+            </div>
+        </section>
+    </body>
+
+</html>
