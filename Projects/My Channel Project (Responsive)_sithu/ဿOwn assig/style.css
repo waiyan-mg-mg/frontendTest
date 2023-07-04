@@ -1,0 +1,107 @@
+/* google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+/* 
+Background: #333333 or #192A3E
+Text: #ffffff
+Heading Text: #ffffff
+Link: #00BCD4 or #1976D2
+Active Link / Highlight: #00BCD4
+Buttons: #00BCD4
+Button Text: #ffffff
+Hovered Buttons: #1976D2
+CTA Button Background: #00BCD4 or #B71C1C
+CTA Button Text: #ffffff
+Navigation Links: #ffffff
+Active Navigation Link: #00BCD4
+Accent Colors: #FFD700 or #B71C1C
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --background-color: #333333;
+  --dark-color: #192a3e;
+  --text-color: #ffffff;
+  --button-hover: #1976d2;
+  --cta-bg-color: #b71c1c;
+  --button-bg-color: #ffd700;
+  --nav-color: #00bcd4;
+}
+
+body {
+  font-size: 20px;
+  background-color: var(--background-color);
+  color: white;
+  font-family: "Shadows Into Light", cursive;
+  font-family: "Sora", sans-serif;
+  height: 2000px;
+  scroll-behavior: smooth;
+}
+
+/* --------- nav start --------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+  background-color: var(--dark-color);
+  position: sticky;
+  top: 0;
+}
+
+nav span {
+  font-size: 30px;
+  color: var(--button-bg-color);
+  /* animate css */
+  animation: jackInTheBox;
+  animation-duration: 1s;
+}
+
+nav .nav-links {
+  display: flex;
+  column-gap: 30px;
+}
+nav .nav-links li {
+  position: relative;
+}
+.nav-links li a {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.nav-links li a::after {
+  background-color: var(--nav-color);
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.nav-links li a:hover::after,
+.nav-links .active_link::after {
+  width: 100%;
+}
+
+nav .signUp_btn {
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--cta-bg-color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .signUp_btn:hover {
+  background-color: var(--button-hover);
+}
+/* --------- nav end --------- */
