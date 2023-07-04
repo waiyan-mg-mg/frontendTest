@@ -124,10 +124,13 @@
                 cursor: pointer;
             }
         </style>
-
+        <link rel="stylesheet" href="./library/imagehover.css-master/css/imagehover.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     </head>
 
     <body>
+
         <nav class="navigation">
             <div class="left_nav">
                 <h1>My Movie Side</h1>
@@ -141,8 +144,20 @@
                 <button>Sing Up</button>
             </div>
         </nav>
+        <h1 style="color: white;" class="animate__animated animate__bounce">An animated element</h1>
+
         <div class="movies_container">
-            <img src="/css/images/Poster/12_little_mermaid_ver3_xlg.jpg" alt="">
+            <figure class="imghvr-push-left">
+                <figcaption>This is Fig captino Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                    iusto ab ipsa exercitationem amet ipsum deleniti dolorum quas sunt hic inventore temporibus modi
+                    aliquid incidunt maiores eius perspiciatis consectetur porro, quam magnam? Earum debitis officia
+                    iusto animi. Deserunt, placeat incidunt.a
+                    <a href="#">some</a>
+                </figcaption>
+                <span>This is span</span>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="imghvr-push-up" src="/css/images/Poster/12_little_mermaid_ver3_xlg.jpg" alt="">
+            </figure>
             <img src="/css/images/Poster/9_imax_guardians_of_the_galaxy_marathon_xlg.jpg" alt="">
             <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
             <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
