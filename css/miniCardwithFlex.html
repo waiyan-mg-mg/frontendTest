@@ -1,209 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Card</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  "
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopping Card</title>
-        <!-- fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+      a {
+        text-decoration: none;
+      }
 
-            a {
-                text-decoration: none;
-            }
+      .container {
+      }
 
-            .container {}
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        background-color: #c300ff;
+        padding: 0 30px;
+        font-size: 20px;
+      }
 
-            .navigation {
-                display: flex;
-                justify-content: space-between;
-                background-color: #c300ff;
-                padding: 0 30px;
-                font-size: 20px;
-            }
+      .navigation .left_nav {
+        padding: 10px;
+      }
 
-            .navigation .left_nav {
-                padding: 10px;
-            }
+      .left_nav a {
+        color: white;
+        padding: 5px 10px;
+        border-bottom: 1px solid white;
+        transition: 0.3s;
+      }
 
-            .left_nav a {
-                color: white;
-                padding: 5px 10px;
-                border-bottom: 1px solid white;
-                transition: .3s;
-            }
+      .left_nav a:hover {
+        padding-bottom: 1px;
+      }
 
-            .left_nav a:hover {
-                padding-bottom: 1px;
-            }
+      .navigation .right_nav {
+        padding: 10px;
+      }
 
-            .navigation .right_nav {
-                padding: 10px;
-            }
+      .right_nav a {
+        color: #c300ff;
+        background-color: white;
+        padding: 2px 6px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
 
-            .right_nav a {
-                color: #c300ff;
-                background-color: white;
-                padding: 2px 6px;
-                border-radius: 5px;
-                transition: .3s;
-            }
+      .right_nav a:hover {
+        padding: 5px 10px;
+      }
 
-            .right_nav a:hover {
-                padding: 5px 10px;
-            }
+      .right_nav a:nth-child(2) {
+        background: none;
+        color: white;
+        border: 1px solid #ffff1a;
+      }
 
-            .right_nav a:nth-child(2) {
-                background: none;
-                color: white;
-                border: 1px solid #ffff1a;
-            }
+      /* card */
+      .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-content: start;
+        row-gap: 30px;
+        margin-top: 30px;
+      }
 
-            /* card */
-            .cards {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-evenly;
-                align-content: start;
-                row-gap: 30px;
-                margin-top: 30px;
-            }
+      .card {
+        width: 250px;
+        border: 3px solid #1a31ff;
+        border-radius: 5px;
+      }
 
-            .card {
-                width: 250px;
-                border: 3px solid #1a31ff;
-                border-radius: 5px;
-            }
+      .card_body img {
+        width: 100%;
+      }
 
-            .card_body img {
-                width: 100%;
-            }
+      .card_footer {
+        border-top: 3px solid #1a31ff;
+        text-align: center;
+        background-color: crimson;
+        transition: 0.3s;
+      }
 
-            .card_footer {
-                border-top: 3px solid #1a31ff;
-                text-align: center;
-                background-color: crimson;
-                transition: .3s;
-            }
+      .card_footer:hover {
+        background-color: #c300ff;
+      }
 
-            .card_footer:hover {
-                background-color: #c300ff;
-            }
+      .card_footer .card_footer_product {
+        color: yellow;
+        font-weight: bold;
+        font-size: 21px;
+      }
 
-            .card_footer .card_footer_product {
-                color: yellow;
-                font-weight: bold;
-                font-size: 21px;
-            }
+      .card_footer span {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
 
-            .card_footer span {
-                color: white;
-                font-size: 20px;
-                cursor: pointer;
-            }
-        </style>
-    </head>
-
-    <body>
-        <section class="container">
-            <nav class="navigation">
-                <div class="left_nav">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Service</a>
-                </div>
-                <div class="right_nav">
-                    <a href="#">Log In</a>
-                    <a href="#">Sign Up</a>
-                </div>
-            </nav>
-            <div class="cards">
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/1.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 1</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/2.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 2</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/3.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 3</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/4.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 4</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/5.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 5</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/6.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 6</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_body">
-                        <img src="/css/images/7.jpg" alt="product">
-                    </div>
-                    <div class="card_footer">
-                        <div class="card_footer_product">Product 7</div>
-                        <div class="card_footer_buy">
-                            <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <section class="container">
+      <nav class="navigation">
+        <div class="left_nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Service</a>
+        </div>
+        <div class="right_nav">
+          <a href="#">Log In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </nav>
+      <div class="cards">
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/1.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 1</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
             </div>
-        </section>
-    </body>
-
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/2.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 2</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/3.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 3</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/4.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 4</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/5.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 5</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/6.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 6</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_body">
+            <img src="/css/images/products/7.jpg" alt="product" />
+          </div>
+          <div class="card_footer">
+            <div class="card_footer_product">Product 7</div>
+            <div class="card_footer_buy">
+              <span><i class="fa-solid fa-cart-shopping"></i> Buy Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

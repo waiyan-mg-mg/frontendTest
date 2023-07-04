@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/19b42c0c4d.js" crossorigin="anonymous"></script>
+        <style>
+            :root {
+                --background: #1E1C0C;
+                --text-primary-color: #008878;
+                --text-secondary-color: #394000;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--background);
+            }
+
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 50px;
+                background-color: yellow;
+            }
+
+            .navigation .left_nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left_nav h1 {
+                font-size: 30px;
+                margin-right: 10px;
+                color: crimson;
+            }
+
+            .search_container {
+                display: flex;
+                position: relative;
+            }
+
+            .search_container i,
+            .search_container input {
+                display: block;
+            }
+
+            .search_container i {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                font-size: 20px;
+            }
+
+            .search_container input {
+                width: 218px;
+                height: 30px;
+                border-radius: 10px;
+                padding: 20px 35px;
+                padding-right: 10px;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: none;
+                transition: 0.5s ease-in-out;
+            }
+
+            .search_container input:focus {
+                border: 3px solid var(--text-primary-color);
+                outline: none;
+            }
+
+            .right_nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .right_nav button {
+                font-size: 20px;
+                display: block;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            .right_nav button:nth-child(1) {
+                background: none;
+                border: 1px solid var(--text-primary-color);
+                color: var(--text-primary-color);
+                text-transform: uppercase;
+            }
+
+            .right_nav button:nth-child(1):hover,
+            .right_nav button:nth-child(2):hover {
+                color: white;
+                background-color: crimson;
+                transition: .5s;
+            }
+
+            .right_nav button:nth-child(2) {
+                color: var(--text-secondary-color);
+                background-color: white;
+                border: 1px solid var(--text-primary-color);
+                text-transform: uppercase;
+            }
+
+            .movies_container {
+                margin: 0 auto;
+                padding: 30px 50px;
+                column-count: 5;
+                column-width: 250px;
+            }
+
+            .movies_container img {
+                width: 100%;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <nav class="navigation">
+            <div class="left_nav">
+                <h1>My Movie Side</h1>
+                <div class="search_container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="right_nav">
+                <button>Log In</button>
+                <button>Sing Up</button>
+            </div>
+        </nav>
+        <div class="movies_container">
+            <img src="/css/images/Poster/12_little_mermaid_ver3_xlg.jpg" alt="">
+            <img src="/css/images/Poster/9_imax_guardians_of_the_galaxy_marathon_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/12_little_mermaid_ver3_xlg.jpg" alt="">
+            <img src="/css/images/Poster/9_imax_guardians_of_the_galaxy_marathon_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/3_knights_of_the_zodiac_ver10_xlg.jpg" alt="">
+            <img src="/css/images/Poster/1_cats_of_malta_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/2_Dead Shot (2023)_dead_shot_ver2.jpg" alt="">
+            <img src="/css/images/Poster/14_dungeons_and_dragons_honor_among_thieves_ver12_xlg.jpg" alt="">
+            <img src="/css/images/Poster/7_talk_to_me_xlg.jpg" alt="">
+            <img src="/css/images/Poster/6_transformers_rise_of_the_beasts_ver11_xlg.jpg" alt="">
+            <img src="/css/images/Poster/5_spiderman_across_the_spiderverse_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/4_oppenheimer_ver5_xlg.jpg" alt="">
+            <img src="/css/images/Poster/13_ghosted_xlg.jpg Shot (2023)_dead_shot_ver2.jpg" alt="">
+        </div>
+    </body>
+
+</html>
