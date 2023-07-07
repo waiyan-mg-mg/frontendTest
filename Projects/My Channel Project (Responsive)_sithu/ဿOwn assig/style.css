@@ -114,13 +114,13 @@ nav .nav-links li {
 /* --------- nav start --------- */
 .home {
   width: 100%;
-  min-height: 850px;
+  min-height: 840px;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.home .siema {
+.home .image_container {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -128,7 +128,7 @@ nav .nav-links li {
   object-position: center;
 }
 
-.home .siema img {
+.home .image_container div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
