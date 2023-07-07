@@ -54,6 +54,7 @@ nav {
   background-color: var(--dark-color);
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 nav span {
@@ -61,7 +62,7 @@ nav span {
   color: var(--button-bg-color);
   /* animate css */
   animation: jackInTheBox;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 nav .nav-links {
@@ -92,7 +93,7 @@ nav .nav-links li {
   width: 100%;
 }
 
-nav .signUp_btn {
+.cta_btn {
   font-size: 20px;
   color: var(--text-color);
   background-color: var(--cta-bg-color);
@@ -101,7 +102,80 @@ nav .signUp_btn {
   cursor: pointer;
   transition: 0.3s;
 }
-nav .signUp_btn:hover {
+
+.cta_btn:hover {
   background-color: var(--button-hover);
 }
+
+.cta_btn:active {
+  background-color: #53a9ff;
+}
 /* --------- nav end --------- */
+/* --------- nav start --------- */
+.home {
+  width: 100%;
+  min-height: 850px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.home .siema {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home .siema img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.6);
+}
+
+.home .header_texts {
+  padding-left: 150px;
+  z-index: 2;
+}
+
+.header_texts span {
+  color: var(--button-bg-color);
+  font-size: 2rem;
+}
+.header_texts h1 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+.header_texts button {
+  margin-top: 10px;
+}
+.header_texts a {
+  position: absolute;
+  right: 4rem;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.header_texts .bx {
+  font-size: 4rem;
+  background-color: var(--cta-bg-color);
+  color: var(--text-color);
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.479);
+  transition: 0.2s;
+}
+
+.header_texts a:hover .bx {
+  font-size: 4.2rem;
+  filter: brightness(1.1);
+}
+
+.header_texts a:active .bx {
+  background-color: #e71717;
+}
+/* --------- home end --------- */

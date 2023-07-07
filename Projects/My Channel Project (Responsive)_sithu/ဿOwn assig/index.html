@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Latt Yar Movie</title>
-        <!-- icon box -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="./style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latt Yar Movie</title>
+    <!-- icon box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-    <body>
-        <!-- nav start -->
-        <nav>
-            <span class="animate__animated  animate__delay-1s logo "><i class='bx bxs-camera-movie'></i>
-                Latt Yar
-                Movie</span>
-            <ul class="nav-links">
-                <li><a class="active_link" href="#">Home</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">Up Coming</a></li>
-                <li><a href="#">Advertise</a></li>
-            </ul>
-            <button class="signUp_btn">Sign Up</button>
-        </nav>
-    </body>
+  <body>
+    <!-- nav start -->
+    <nav>
+      <span class="animate__animated animate__delay-1s logo"><i class="bx bxs-camera-movie"></i> Latt Yar Movie</span>
+      <ul class="nav-links">
+        <li><a class="active_link" href="#">Home</a></li>
+        <li><a href="#movies_sec">Movies</a></li>
+        <li><a href="#upComing_sec">Up Coming</a></li>
+        <li><a href="#advertise_sec">Advertise</a></li>
+      </ul>
+      <button class="cta_btn">Sign Up</button>
+    </nav>
+    <!-- nav end -->
+    <!-- home page start -->
+    <section class="home">
+      <div class="siema">
+        <div> <img src="./spider/2.webp" alt="spider man cover" /></div>
+        <div><img src="./spider/1.webp" alt="spider man cover" /></div>
+        <div> <img src="./spider/4.webp" alt="spider man cover" /></div>
+        <div> <img src="./spider/3.webp" alt="spider man cover" /></div>
+        <div> <img src="./spider/5.webp" alt="spider man cover" /></div>
+      </div>
+      <div class="header_texts">
+        <span>We all have secrets.</span>
+        <h1>
+          the ones we keep...and <br />
+          the ones that are kept from us.
+        </h1>
+        <button class="cta_btn">Watch Now</button>
+        <a href="#"> <i class='bx bx-play'></i></a>
+      </div>
+    </section>
+    <!-- home page end -->
+    <!-- siema slide js -->
+    <script src="./offine lib/siema.min.js"></script>
+    <script>
+      new Siema({
+        selector: '.siema',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        loop: true,
+      });
+    </script>
+  </body>
 
 </html>
