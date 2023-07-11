@@ -33,6 +33,12 @@ Accent Colors: #FFD700 or #B71C1C
   --cta-bg-color: #b71c1c;
   --button-bg-color: #ffd700;
   --nav-color: #00bcd4;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: black;
+  color: var(--button-bg-color);
 }
 
 body {
@@ -41,7 +47,6 @@ body {
   color: white;
   font-family: "Oswald", sans-serif;
   height: 2000px;
-  scroll-behavior: smooth;
 }
 
 /* --------- nav start --------- */
@@ -190,7 +195,8 @@ nav .nav-links li {
   max-width: 830px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
   gap: 20px;
 }
 .movies .movies_container .single_movie {
@@ -205,11 +211,11 @@ nav .nav-links li {
   object-fit: cover;
   filter: brightness(1) contrast(0.9);
   transition: 0.4s;
-  border-radius: 10px;
+  border-radius: 8px;
 }
-.single_movie img:hover {
+#movies_sec .single_movie img:hover {
   transform: scale(1.1);
-  filter: brightness(1.2) contrast(1.1);
+  filter: brightness(1.2) contrast(1);
 }
 .single_movie .text_box {
   /* word-wrap: break-word; */
@@ -235,3 +241,137 @@ nav .nav-links li {
   font-weight: 200;
 }
 /* --------- movie section end --------- */
+/* --------- upcoming section start --------- */
+#upComing_sec {
+  border-bottom: 1px solid var(--button-bg-color);
+  padding-bottom: 20px;
+}
+#upComing_sec h1 {
+  margin: 20px auto;
+}
+#upComing_sec .img_box {
+  position: relative;
+  transition: 0.4s;
+}
+.img_box .tooltip {
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  padding: 5px 10px;
+  border: 3px dashed white;
+  background-color: var(--cta-bg-color);
+  color: white;
+  transform: rotate(-1deg);
+}
+
+#upComing_sec img {
+  transform: rotate(-1deg);
+  filter: grayscale(1);
+}
+#upComing_sec .img_box:hover {
+  transform: rotate(1deg);
+}
+#upComing_sec .img_box:hover .tooltip {
+  visibility: hidden;
+}
+#upComing_sec .img_box:hover img {
+  filter: grayscale(0);
+}
+/* --------- upcoming section end --------- */
+/* --------- subscription section start --------- */
+.subscribe {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.subscribe h1 {
+  margin: 20px 0;
+}
+.subscribe h2 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: var(--button-bg-color);
+  background-color: var(--dark-color);
+}
+.subscribe h2 span {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+}
+.subscribe form {
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 5px;
+  border-radius: 10px;
+}
+.subscribe input {
+  font-size: 1.3rem;
+  padding-right: 3px;
+}
+.subscribe input:focus {
+  outline: none;
+}
+
+.subscribe span {
+  font-weight: 100;
+}
+
+.pricing {
+  margin: 20px auto 0;
+  max-width: 800px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.pricing div {
+  padding: 50px 70px 0;
+  text-align: left;
+  border-radius: 15px;
+  /* background-color: var(--text-color);
+  color: var(--dark-color); */
+  transition: 0.5s;
+  background-color: var(--dark-color);
+  color: var(--button-bg-color);
+}
+.pricing div:hover {
+background-color: black;
+}
+.pricing div.free_box {
+  color: var(--text-color);
+}
+.pricing .plan_title {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.pricing .user {
+  font-weight: 300;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+.pricing .amount {
+  margin-bottom: 30px;
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.pricing ul {
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.pricing .cta_btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* --------- subscription section end --------- */

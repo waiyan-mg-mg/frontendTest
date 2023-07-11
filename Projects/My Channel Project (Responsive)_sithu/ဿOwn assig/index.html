@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- owl carousel -->
+    <!--  carousel -->
     <link rel="stylesheet" href="offine lib/owl carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- image hover css -->
-    <link rel="stylesheet" href="./offine lib/imagehover.min.css">
+    <!-- image hover -->
   </head>
 
   <body>
@@ -60,13 +59,13 @@
     </section>
     <!-- home page end -->
     <!-- movie section start -->
-    <section class="movies">
+    <section class="movies" id="movies_sec">
       <h1>Opening This Week</h1>
       <div class="movies_container">
         <!-- movie -->
         <div class="single_movie">
           <div class="img_box">
-            <img src="./Posters/1_cats_of_malta_xlg.jpg" alt="cats_of_malta" />
+            <img src="./Posters/1_cats_of_malta_xlg.jpg" class="imghvr-push-up" alt="cats_of_malta" />
           </div>
           <div class="text_box">
             <h2>Cats Of Malta - <span>120 mins</span></h2>
@@ -92,7 +91,6 @@
             <h2>Knights Of The Zodiac - <span>130 mins</span></h2>
             <h3>Fantasy | Adventure film</h3>
           </div>
-
         </div>
         <!-- movie -->
         <div class="single_movie">
@@ -203,7 +201,9 @@
               alt="Dungeons And Dragons Honor Among Thieves" />
           </div>
           <div class="text_box">
-            <h2>Dungeons And Dragons Honor Among Thieves - <span>135 mins</span></h2>
+            <h2>
+              Dungeons And Dragons Honor Among Thieves - <span>135 mins</span>
+            </h2>
             <h3>Fantasy | Adventure film</h3>
           </div>
         </div>
@@ -224,13 +224,105 @@
               alt="Pirates In An Adventure With Scientists" />
           </div>
           <div class="text_box">
-            <h2>Pirates In An Adventure With Scientists - <span>95 mins</span></h2>
+            <h2>
+              Pirates In An Adventure With Scientists - <span>95 mins</span>
+            </h2>
             <h3>Animated | Comedy film</h3>
           </div>
         </div>
       </div>
     </section>
     <!-- movie section end -->
+    <!-- upcoming section start -->
+    <section class="movies" id="upComing_sec">
+      <h1>Up Coming</h1>
+      <div class="upcoming_movies movies_container">
+        <!-- movie -->
+        <div class="single_movie">
+          <div class="img_box">
+            <div class="tooltip">Coming Soon</div>
+            <img src="./comingMov/1_cape_xlg.jpg" class="imghvr-push-up" alt="cats_of_malta" />
+          </div>
+          <div class="text_box">
+            <h2>The Cape <br> <span>120 mins</span></h2>
+            <h3>Horror | Thriller film</h3>
+          </div>
+        </div> <!-- movie -->
+        <div class="single_movie">
+          <div class="img_box">
+            <div class="tooltip">Coming Soon</div>
+            <img src="/comingMov/2_teenage_mutant_ninja_turtles_mutant_mayhem_ver19_xlg.jpg" class="imghvr-push-up"
+              alt="cats_of_malta" />
+          </div>
+          <div class="text_box">
+            <h2>Teenage Mutant Ninja <br> <span>115 mins</span></h2>
+            <h3>Mystery | Action film</h3>
+          </div>
+        </div> <!-- movie -->
+        <div class="single_movie">
+          <div class="img_box">
+            <div class="tooltip">Coming Soon</div>
+            <img src="/comingMov/3_barbie_ver29_xlg.jpg" class="imghvr-push-up" alt="cats_of_malta" />
+          </div>
+          <div class="text_box">
+            <h2>Barbie <br> <span>140 mins</span></h2>
+            <h3>Mystery | Fantasy film</h3>
+          </div>
+        </div>
+        <!-- movie -->
+        <div class="single_movie">
+          <div class="img_box">
+            <div class="tooltip">Coming Soon</div>
+            <img src="/comingMov/4_dungeons_and_dragons_honor_among_thieves_ver14_xlg.jpg" class="imghvr-push-up"
+              alt="cats_of_malta" />
+          </div>
+          <div class="text_box">
+            <h2>Dungeon Thieves <br> <span>96 mins</span></h2>
+            <h3>Superhero | Monster film</h3>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+    <!-- upcoming section end -->
+    <!-- subscription section start -->
+    <section id="subscription" class="subscribe">
+      <h1>ALL YOUR FAVORITE TV IN ONE PLACE</h1>
+      <h2>Watch thousands of shows and movies, with plans starting at <span>$7.99</span>/month.</h2>
+      <form action="#">
+        <input type="email" placeholder="mail@example.com">
+        <button class="cta_btn">Contact Us</button>
+      </form>
+      <span>New subscribers only. Cancel anytime. Additional terms apply.</span>
+      <div class="pricing">
+        <div class="free_box">
+          <h3 class="plan_title">Free</h3>
+          <h4 class="user">For Single User</h4>
+          <h4 class="amount"> $0</h4>
+          <ul>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;1 device</li>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;up to 720p</li>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;Normal Server Speed</li>
+          </ul>
+          <button class="cta_btn">Subscribe</button>
+        </div>
+         <div class="pro_box">
+          <h3 class="plan_title">Pro</h3>
+          <h4 class="user">For Multiple User</h4>
+          <h4 class="amount"> $7.99/month</h4>
+          <ul>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;up to 5 devices</li>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;up to 4k</li>
+            <li> <i class='bx bxs-check-circle'></i> &nbsp;&nbsp;Fastest Server Speed</li>
+          </ul>
+          <button class="cta_btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <!-- subscription section end -->
+
     <!-- jquery & owl carousel -->
     <script src="/offine lib/jquery.min.js"></script>
     <script src="/offine lib/owl carousel/owl.carousel.min.js"></script>
@@ -246,6 +338,7 @@
         autoplayTimeout: 2500,
         animateOut: "fadeOut",
       });
+
     </script>
   </body>
 
