@@ -12,7 +12,7 @@ while (state1) {
     }
     else {
         num1 = Number(input);
-        state1 = false;
+        break;
     }
 }
 while (state2) {
@@ -22,9 +22,13 @@ while (state2) {
     }
     else {
         num2 = Number(input);
-        state2 = false;
+        break;
     }
 }
 
-console.log(num1);
-console.log(num2);
+for (let i = num1; i <= num2; i++){
+    console.log(i);
+}
+
+
+
