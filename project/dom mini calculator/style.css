@@ -1,0 +1,92 @@
+:root {
+  --first: #071952;
+  --second: #0b666a;
+  --third: #35a29f;
+  --fourth: #97feed;
+  --text-primary: #000;
+  --text-secondary: #fff;
+}
+
+::selection {
+  background-color: rgb(209, 209, 209);
+  color: black;
+}
+
+body {
+  background-color: var(--first);
+  color: rgba(238, 238, 238, 0.867);
+}
+.container {
+  width: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: var(--second);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--third);
+  color: var(--text-primary);
+}
+
+input {
+  padding: 5px;
+}
+button {
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: var(--fourth);
+  color: var(--text-primary);
+}
+
+button:hover {
+  background-color: var(--first);
+  color: var(--text-secondary);
+}
+button:active {
+  background-color: var(--fourth);
+  color: var(--text-primary);
+}
+/* output section */
+div.output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+#result {
+  width: max-content;
+  color: rgb(248, 232, 0);
+  height: 30px;
+  text-align: center;
+}
+
+@media (max-width: 460px) {
+  .container {
+    /* padding: 20px; */
+    width: 300px;
+  }
+}
