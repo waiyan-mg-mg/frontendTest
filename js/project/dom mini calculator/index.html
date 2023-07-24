@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dom Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form class="container">
+            <h1>Calculator</h1>
+            <label for="fistNumber">First Number:</label>
+            <input type="text" id="fistNumber" required>
+            <label for="secondNumber">Second Number:</label>
+            <input type="text" id="secondNumber" required>
+            <label for="operator">Operator:</label>
+            <select name="operator" id="operator" required>
+                <option value="">Choose Operator⏬</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <div class="output">
+                <label for="result">Result :</label>
+                <input disabled type="text" id="result" value="...">
+            </div>
+            <button type="submit" id="btnCalculate">Calculate</button>
+        </form>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
