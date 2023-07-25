@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,21 +9,92 @@
   </head>
 
   <body>
-    <h1>Object</h1>
-    <button>Remove</button>
-    <script src="./domtest.js"></script>
+    <section class="container">
+      <div class="singleProduct">
+        <!-- <div class="card">
+          <div class="img_box"><img src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"></div>
+          <div class="info_container">
+            <ul>
+              <li>Title :<span>lorem</span></li>
+              <li>Price :<span>lorem</span></li>
+              <li>Rating :<span>lorem</span></li>
+              <li>Categories :<span>lorem</span></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+      <table>
+        <thead>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Rating</th>
+          <th>Product</th>
+        </thead>
+        <tbody>
+          <!-- api data here
+          <tr>
+            <td>${data[i].id}</td>
+            <td>${data[i].title}</td>
+            <td>${data[i].price}</td>
+            <td>${data[i].rating.rate}</td>
+            <td>
+              <img src="${data[i].image}" />
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </section>
+    <script src="./api.js"></script>
     <script>
-      let p = document.createElement("p");
-      let header = document.querySelector("h1");
-      document.querySelector("button").addEventListener("click", () => {
-        p.remove();
-      });
-      document.querySelector("button").addEventListener("click", () => {
-        p.textContent = "";
-        let pContent = document.createTextNode("This is p tag");
-        p.appendChild(pContent);
-        header.appendChild(p);
-      });
+      let url = "https://fakestoreapi.com/products";
+      let data;
+      let tbody = document.querySelector("tbody");
+      let html = "";
+      // fetch core data
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          for (let i = 0; i < data.length; i++) {
+            html += `<tr onclick="fetchSinglePrd(${data[i].id})">
+                      <td>${data[i].id}</td>
+                      <td>${data[i].title}</td>
+                      <td>${data[i].price} MMk</td>
+                      <td>${data[i].rating.rate}</td>
+                      <td>
+                        <img
+                          src="${data[i].image}"
+                        />
+                      </td>
+                    </tr>`;
+          }
+          // append data to html
+          tbody.innerHTML = html;
+        });
+      // fetch single prd
+      async function fetchSinglePrd(id) {
+        let response = await fetch(url + "/" + id);
+        let data = await response.json();
+        let productDiv = document.querySelector(".singleProduct");
+        productDiv.innerHTML = `
+        <div class="card">
+          <div class="img_box"><img src="${data.image}"></div>
+          <div class="info_container">
+            <ul>
+              <li>Title :<span>${data.title}</span></li>
+              <li>Price :<span>${data.price} MMk</span></li>
+              <li>Rating :<span>${data.rating.rate}</span></li>
+              <li>Categories :<span>${data.category}</span></li>
+            </ul>
+          </div>
+        </div>
+        `;
+        productDiv.style.display = "block";
+      }
+
+
     </script>
   </body>
+
 </html>
