@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <section class="container text-center">
+            <div class="btn-group">
+                <button class="btn">Button</button>
+                <button class="btn btn-primary ">Button ngtw</button>
+                <button class="btn btn-outline-danger">Button</button>
+                <button class="btn btn-success">Button</button>
+                <button class="btn btn-danger">Button</button>
+                <button class="btn btn-info">Button</button>
+                <button class="btn btn-warning">Button</button>
+                <button class="btn btn-light">Button</button>
+                <button class="btn btn-dark">Button</button>
+                <button class="btn btn-link">Button</button>
+            </div>
+            <div class="mt-5 btn-group-vertical">
+                <button class="btn btn-success">Normal Btn</button>
+                <button class="btn btn-info btn-sm">Small btn</button>
+                <button class="btn btn-warning btn-lg">Large btn</button>
+                <button class="btn btn-outline-success">Normal Btn</button>
+                <button class="btn btn-outline-info btn-sm">Small btn</button>
+                <button class="btn btn-outline-warning btn-lg">Large btn</button>
+            </div>
+            <div class="mt-5">
+                <h1>Active Toggle</h1>
+                <button class="btn btn-dark" data-bs-toggle="button">Toggle</button>
+            </div>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-primary">2</button>
+                    <button type="button" class="btn btn-primary">3</button>
+                    <button type="button" class="btn btn-primary">4</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">6</button>
+                    <button type="button" class="btn btn-secondary">7</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info">8</button>
+                </div>
+            </div>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+                <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+            </div>
+
+        </section>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="https://imgs.search.brave.com/iaGuGsj6A3BA5sPFlME5k_uk9rnvDGen_67zY3t9Ocw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQz/ODE1MTE1MS9waG90/by9oYXBweS1hZnJp/Y2FuLWFtZXJpY2Fu/LWxpdHRsZS1iYWJ5/LWJveS1jcmF3bGlu/Zy1hbmQtbG9va2lu/Zy1mb3Itc29tZS10/aGluZy10by1sZWFy/bi53ZWJwP2I9MSZz/PTE3MDY2N2Emdz0w/Jms9MjAmYz02X2Nn/V1NhSldwNFdsZklr/QjFhbm0tdTA3M0Na/WGNsM3ZfRUxDM29O/ZUhZPQ"
+                    alt="" class="card-img">
+                <div class="card-body card-img-overlay overflow-hidden">
+                    <h2 class="card-title">Hello world</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        rerum
+                        facere, sapiente sed in natus!</p>
+                    <button class="btn btn-outline-success">Click me</button>
+                    <a href="#" class="card-link">This is link</a>
+                    <ul class="list-group list-group-flush border border-info mt-1 rounded">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </li>
+                    </ul>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="accordion-flush accordion  mx-auto w-25" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Item 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body d-flex justify-content-between">
+                            <span>Text here</span><button type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span>Text here</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span>Text here</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #4
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <span>Text here four</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item "><a href="#">Data</a></li>
+                    <li class="breadcrumb-item active" aria-current="resocuce">‌<a href="#">resocuce</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                </ol>
+            </nav>
+            <!-- multi collapse -->
+            <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button">Toggle
+                    first element</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2">Toggle second
+                    element</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse">Toggle both
+                    elements</button>
+                <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3">Toggle
+                    Third</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dorpdown with collapse -->
+            <div class="dorpdownwithcollapse">
+                <div class="btn-group dropup">
+                    <button data-bs-toggle="collapse" data-bs-target="#dropdownWIthCollapse" type="button"
+                        class="btn btn-lg btn-danger">Action</button>
+                    <button type="button" class="btn btn-lg btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">1</a></li>
+                        <li><a href="#" class="dropdown-item">1</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">1</a></li>
+                        <li><a href="#" class="dropdown-item">1</a></li>
+                        <li><a href="#" class="dropdown-item">1</a></li>
+                    </ul>
+                </div>
+                <div class="collapse" id="dropdownWIthCollapse">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed
+                        when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+            <!-- placeholder loading -->
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" aria-hidden="true">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                    </p>
+                    <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                </div>
+            </div>
+            <div class="placeholder placeholder-wave w-75">&nbsp;</div>
+            <div class="container text-center">
+                <div class="row g-0   ">
+                    <div class="col-6">
+                        <div class="">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">Custom column padding</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">Custom column padding</div>
+                    </div>
+                </div>
+            </div>
+    </body>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>
