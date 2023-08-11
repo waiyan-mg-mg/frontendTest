@@ -1,0 +1,17 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.hover-on-ligh-up {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.hover-on-ligh-up:hover {
+  /* background-color: #ffc107; */
+  background-color: #dc3545;
+  color: white;
+}
+
+.hover-on-ligh-up:hover i {
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
